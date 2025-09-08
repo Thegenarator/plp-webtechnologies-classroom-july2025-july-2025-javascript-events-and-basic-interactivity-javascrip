@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JiraniTech Outfitters</title>
+
+  <!-- AOS & Typed.js Libraries -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div id="progressBar"></div>
+
+  <header>
+    <h1>JiraniTech Outfitters</h1>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+      <button id="darkModeToggle" title="Toggle Dark Mode">🌓</button>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" data-aos="zoom-in">
+    <h2><span id="typed"></span></h2>
+    <p>Trusted by over 1,000 clients for tech support and repairs.</p>
+    <a href="#contact" class="btn">Get Support</a>
+  </section>
+
+  <main>
+    <section id="services" data-aos="fade-up">
+      <h2>Our ICT & Repair Services</h2>
+      <input type="text" id="searchServices" placeholder="Search services..." />
+
+      <p>We’ve already repaired <strong><span id="count">0</span></strong> devices and counting! 👨‍🔧</p>
+      <button id="counterBtn" class="btn">Add a Count</button>
+      <ul class="services-list" id="servicesList">
+        <li>Laptop Repair Services</li>
+        <li>Mobile Phone Repair Services</li>
+        <li>ICT Consultations</li>
+        <li>Data Recovery & Backup Solutions</li>
+        <li>Virus & Malware Removal</li>
+        <li>Software Installation & Configuration</li>
+        <li>Custom PC Building & Upgrades</li>
+      </ul>
+
+      <div class="faq">
+        <h3 class="faq-question">What brands do you repair?</h3>
+        <div class="faq-answer">We service all major brands: Dell, HP, Lenovo, Acer, Apple, etc.</div>
+
+        <h3 class="faq-question">Do you offer remote support?</h3>
+        <div class="faq-answer">Yes, through Zoom or TeamViewer sessions for software-related issues.</div>
+      </div>
+    </section>
+
+    <section id="products" data-aos="fade-up">
+      <h2>Our Products</h2>
+      <ul class="services-list">
+        <li>Laptops from top brands</li>
+        <li>Smartphones and accessories</li>
+        <li>Computer peripherals (keyboards, mice, monitors)</li>
+        <li>Networking equipment (routers, modems)</li>
+        <li>Chargers, cables, and other essential gadgets</li>
+      </ul>
+    </section>
+
+    <section id="contact" data-aos="fade-up">
+      <h2>Contact Us</h2>
+      <form id="contactForm" novalidate>
+        <label for="name">Name *</label>
+        <input type="text" id="name" />
+        <div class="feedback" id="nameFeedback"></div>
+
+        <label for="email">Email *</label>
+        <input type="email" id="email" />
+        <div class="feedback" id="emailFeedback"></div>
+
+        <label for="password">Password *</label>
+        <input type="password" id="password" />
+        <div class="feedback" id="passwordFeedback"></div>
+
+        <button type="submit" class="btn">Submit</button>
+        <div id="formMessage" class="form-message"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 JiraniTech Outfitters. All Rights Reserved.
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script src="script.js"></script>
+</body>
+</html>
