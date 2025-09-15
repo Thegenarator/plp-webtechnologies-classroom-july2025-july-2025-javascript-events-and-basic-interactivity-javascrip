@@ -17,12 +17,20 @@
 
   <header>
     <h1>JiraniTech Outfitters</h1>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#products">Products</a>
-      <a href="#contact">Contact</a>
-      <button id="darkModeToggle" title="Toggle Dark Mode">🌓</button>
-    </nav>
+   <nav>
+  <a href="#services">Services</a>
+  <a href="#products">Products</a>
+  <a href="#contact">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn">More ▾</button>
+    <div class="dropdown-content">
+      <a href="#faq">FAQ</a>
+      <a href="#contactForm">Support</a>
+    </div>
+  </div>
+  <button id="darkModeToggle" title="Toggle Dark Mode">🌓</button>
+</nav>
+
   </header>
 
   <!-- HERO SECTION -->
@@ -59,15 +67,35 @@
     </section>
 
     <section id="products" data-aos="fade-up">
-      <h2>Our Products</h2>
-      <ul class="services-list">
-        <li>Laptops from top brands</li>
-        <li>Smartphones and accessories</li>
-        <li>Computer peripherals (keyboards, mice, monitors)</li>
-        <li>Networking equipment (routers, modems)</li>
-        <li>Chargers, cables, and other essential gadgets</li>
-      </ul>
-    </section>
+  <h2>Our Products</h2>
+
+  <div class="tabs">
+    <button class="tab-button active" data-tab="laptops">Laptops</button>
+    <button class="tab-button" data-tab="phones">Phones</button>
+    <button class="tab-button" data-tab="accessories">Accessories</button>
+  </div>
+
+  <div class="tab-content active" id="laptops">
+    <ul class="services-list">
+      <li>Laptops from Dell, HP, Lenovo, and more</li>
+      <li>Certified refurbished and new models</li>
+    </ul>
+  </div>
+  <div class="tab-content" id="phones">
+    <ul class="services-list">
+      <li>Latest smartphones (Android & iOS)</li>
+      <li>Phone accessories: cases, screen protectors</li>
+    </ul>
+  </div>
+  <div class="tab-content" id="accessories">
+    <ul class="services-list">
+      <li>Keyboards, mice, monitors</li>
+      <li>Networking: routers, modems</li>
+      <li>Chargers, cables, adapters</li>
+    </ul>
+  </div>
+</section>
+
 
     <section id="contact" data-aos="fade-up">
       <h2>Contact Us</h2>

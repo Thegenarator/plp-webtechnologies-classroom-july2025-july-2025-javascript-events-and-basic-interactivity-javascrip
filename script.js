@@ -109,3 +109,14 @@ window.onscroll = function () {
   const scrolled = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
   document.getElementById('progressBar').style.width = `${scrolled}%`;
 };
+
+// Tabbed interface for products
+document.querySelectorAll('.tab-button').forEach(button => {
+  button.addEventListener('click', () => {
+    document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+
+    button.classList.add('active');
+    document.getElementById(button.dataset.tab).classList.add('active');
+  });
+});
